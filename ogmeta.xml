@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>OG Meta</name>
+    <author>Crystal Asia</author>
+    <creationDate>Jan 2015</creationDate>
+    <copyright>Crystal Asia</copyright>
+    <license>http://opensource.org/licenses/MIT MIT</license>
+    <authorEmail>hello@crystal-asia.com</authorEmail>
+    <authorUrl>http://www.crystal-asia.com</authorUrl>
+    <version>1.0</version>
+	<description>Open Graph META tags for LinkedIn</description>
+	<files>
+		<filename plugin="ogmeta">ogmeta.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="ogimage" default="" type="text" label="Image URL" description="Link to an image that goes along with this article" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

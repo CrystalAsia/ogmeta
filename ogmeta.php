@@ -25,11 +25,11 @@ class plgContentOgMeta extends JPlugin
             $u = JFactory::getURI();
 
             $document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:title" content="' . $articleTitle->get("title") . '" />');
-			$document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:url" content="' . $u->toString() . '" />');
-			$document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:description" content="' . $introText . '" />');
-			$document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="' . $config->get('sitename') . '" />');
+	    $document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:url" content="' . $u->toString() . '" />');
+	    $document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:description" content="' . $introText . '" />');
+	    $document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="' . $config->get('sitename') . '" />');
 
-			$document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="article:publisher" content="' . JURI::root() . '" />');
+	    $document->addCustomTag('<meta prefix="og: http://ogp.me/ns#" property="article:publisher" content="' . JURI::root() . '" />');
 
             $ogImage = $this->params->get('ogimage');
             if ($ogImage != '') {

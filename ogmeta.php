@@ -17,7 +17,7 @@ class plgContentOgMeta extends JPlugin
 		if (JRequest::getVar('view') == 'article') {
 			$document = JFactory::getDocument();
 
-            // Sanitize description
+			// Sanitize description
 			$introText = substr(strip_tags($article->introtext), 0,250) . "...";
 
 			// Remove quotes
